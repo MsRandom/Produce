@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "produce:block/chardwood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "produce:block/chardwood_log"
+    },
+    "axis=z": {
+      "model": "produce:block/chardwood_log_horizontal",
+      "x": 90
+    }
+  }
+}

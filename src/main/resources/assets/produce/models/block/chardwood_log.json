@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "produce:block/chardwood_log_top",
+    "side": "produce:block/chardwood_log"
+  }
+}
