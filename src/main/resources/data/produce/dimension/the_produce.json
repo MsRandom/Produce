@@ -1,0 +1,76 @@
+{
+  "type": {
+    "name": "produce:the_produce",
+    "ultrawarm": false,
+    "natural": true,
+    "piglin_safe": false,
+    "respawn_anchor_works": false,
+    "bed_works": true,
+    "has_raids": true,
+    "has_skylight": true,
+    "has_ceiling": false,
+    "coordinate_scale": 1,
+    "ambient_light": 0,
+    "logical_height": 256,
+    "infiniburn": "minecraft:infiniburn_overworld",
+    "effects": "minecraft:overworld"
+  },
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 1194827058,
+    "biome_source": {
+      "type": "produce:the_produce",
+      "biomes": [
+        "produce:smoothie_sea",
+        "produce:leafy_green_forest",
+        "produce:brockoli_volcanos"
+      ]
+    },
+    "settings": {
+      "name": "produce:the_produce",
+      "bedrock_roof_position": -10,
+      "bedrock_floor_position": 0,
+      "sea_level": 74,
+      "disable_mob_generation": false,
+      "default_block": {
+        "Name": "minecraft:stone"
+      },
+      "default_fluid": {
+        "Name": "produce:smoothie",
+        "Properties": {
+          "level": "0"
+        }
+      },
+      "noise": {
+        "height": 256,
+        "density_factor": 1.2,
+        "density_offset": -0.46875,
+        "size_horizontal": 1,
+        "size_vertical": 2,
+        "simplex_surface_noise": true,
+        "sampling": {
+          "xz_scale": 1.5,
+          "y_scale": 1,
+          "xz_factor": 140,
+          "y_factor": 160
+        },
+        "bottom_slide": {
+          "target": -30,
+          "size": 0,
+          "offset": 0
+        },
+        "top_slide": {
+          "target": -10,
+          "size": 3,
+          "offset": 0
+        },
+        "random_density_offset": true,
+        "island_noise_override": false,
+        "amplified": false
+      },
+      "structures": {
+        "structures": {}
+      }
+    }
+  }
+}

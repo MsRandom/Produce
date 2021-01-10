@@ -1,0 +1,16 @@
+modLoader="javafml"
+loaderVersion="[35,)"
+license="CC2.0"
+[[mods]]
+modId="produce"
+version="${file.jarVersion}"
+displayName="Produce"
+authors="Coda1552 and Ashley aka Ms. Random"
+description='''
+'''
+[[dependencies.produce]]
+    modId="forge"
+    mandatory=true
+    versionRange="[35,)"
+    ordering="NONE"
+    side="BOTH"

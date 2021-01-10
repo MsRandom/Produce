@@ -1,0 +1,60 @@
+{
+  "surface_builder": "produce:smoothie_sea",
+  "depth": -1.4,
+  "scale": 0.1,
+  "temperature": 0.4,
+  "downfall": 0.4,
+  "precipitation": "rain",
+  "category": "ocean",
+  "effects": {
+    "sky_color": 14135799,
+    "fog_color": 16636927,
+    "water_color": 3786971,
+    "water_fog_color": 4333360,
+    "mood_sound": {
+      "sound": "minecraft:ambient_cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "grass_color": 1277022,
+    "foliage_color": 814655,
+    "grass_color_modifier": "dark_forest"
+  },
+  "starts": [],
+  "spawners": {
+    "water_creature": [
+      {
+        "type": "produce:dragon_fruit_serpent",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "produce:squidnana",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "produce:strawberry_fish",
+        "weight": 5,
+        "minCount": 4,
+        "maxCount": 6
+      }
+    ]
+  },
+  "spawn_costs": {
+    "produce:dragon_fruit_serpent": {
+      "energy_budget": 0.5,
+      "charge": 1
+    }
+  },
+  "carvers": {
+    "liquid": [
+      "minecraft:underwater_cave"
+    ]
+  },
+  "features": [],
+  "player_spawn_friendly": false
+}
