@@ -33,7 +33,7 @@ public class ChardwoodFoliagePlacer extends FoliagePlacer {
         for (int h = -horizontalRadius; h <= horizontalRadius; h++) {
             for (int y = -radius; y <= radius; y++) {
                 BlockPos position = foliage.func_236763_a_().add(h * rotation.x, y, h * rotation.z);
-                if (foliage.func_236763_a_().withinDistance(position, horizontalRadius) && !this.func_230375_b_(random, y, position.getX(), position.getY(), position.getZ(), foliage.func_236765_c_())) {
+                if (foliage.func_236763_a_().withinDistance(position, radius * 0.75) && !this.func_230375_b_(random, y, position.getX(), position.getY(), position.getZ(), foliage.func_236765_c_())) {
                     if (TreeFeature.isReplaceableAt(world, position)) {
                         world.setBlockState(position, config.leavesProvider.getBlockState(random, position), 19);
                         box.expandTo(new MutableBoundingBox(position, position));
