@@ -1,23 +1,14 @@
 {
-  "type": "minecraft:mountain",
   "config": {
     "top_material": {
-      "Name": "produce:brockoli",
-      "Properties": {
-        " ": ""
-      }
+      "Name": "produce:brockoli"
     },
     "under_material": {
-      "Name": "produce:steamed_brockoli",
-      "Properties": {
-        " ": ""
-      }
+      "Name": "produce:steamed_brockoli"
     },
     "underwater_material": {
-      "Name": "produce:brockoli",
-      "Properties": {
-        " ": ""
-      }
+      "Name": "produce:brockoli"
     }
-  }
+  },
+  "type": "minecraft:mountain"
 }

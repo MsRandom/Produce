@@ -1,6 +1,5 @@
 package net.msrandom.produce;
 
-import net.minecraft.fluid.Fluid;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.ResourceLocation;
@@ -9,8 +8,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.msrandom.produce.block.ProduceBlocks;
 import net.msrandom.produce.fluid.ProduceFluids;
 import net.msrandom.produce.item.ProduceItems;

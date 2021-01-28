@@ -1,5 +1,6 @@
 {
   "textures": {
-    "particle": "block/water_still"
+    "particle": "block/water_still",
+    "all": "produce:block/smoothie"
   }
 }

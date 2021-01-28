@@ -1,7 +1,7 @@
 {
   "surface_builder": "produce:brockoli_volcano",
   "depth": 0.125,
-  "scale": 0.05,
+  "scale": 0.5,
   "temperature": 0.9,
   "downfall": 0.6,
   "precipitation": "none",
