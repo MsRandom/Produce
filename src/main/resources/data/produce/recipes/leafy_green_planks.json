@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "produce:leafy_green_logs"
+    }
+  ],
+  "result": {
+    "item": "produce:leafy_green_planks",
+    "count": 4
+  }
+}

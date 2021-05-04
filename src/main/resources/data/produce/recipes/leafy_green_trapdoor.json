@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_trapdoor",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "produce:leafy_green_planks"
+    }
+  },
+  "result": {
+    "item": "produce:leafy_green_trapdoor",
+    "count": 2
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "produce:block/leafy_green_sapling"
+  }
+}

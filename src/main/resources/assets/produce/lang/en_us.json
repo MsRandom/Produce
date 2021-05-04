@@ -1,0 +1,25 @@
+{
+  "itemGroup.produce": "Produce",
+
+  "item.produce.smoothie_bucket": "Bucket of Smoothie",
+
+  "block.produce.leafy_green_log": "Leafy Green Log",
+  "block.produce.leafy_green_leaves": "Leafy Green Leaves",
+  "block.produce.leafy_green_wood": "Leafy Green Wood",
+  "block.produce.leafy_green_planks": "Leafy Green Planks",
+
+  "block.produce.leafy_green_door": "Leafy Green Door",
+  "block.produce.stripped_leafy_green_log": "Stripped Leafy Green Log",
+  "block.produce.stripped_leafy_green_wood": "Stripped Leafy Green Wood",
+  "block.produce.leafy_green_slab": "Leafy Green Slab",
+  "block.produce.leafy_green_stairs": "Leafy Green Stairs",
+  "block.produce.leafy_green_pressure_plate": "Leafy Green Pressure Plate",
+  "block.produce.leafy_green_button": "Leafy Green Button",
+  "block.produce.leafy_green_fence": "Leafy Green Fence",
+  "block.produce.leafy_green_fence_gate": "Leafy Green Fence Gate",
+
+  "block.produce.leafy_green_sapling": "Leafy Green Sapling",
+  "block.produce.potted_leafy_green_sapling": "Potted Leafy Green Sapling",
+
+  "block.produce.brockoli": "Brockoli"
+}

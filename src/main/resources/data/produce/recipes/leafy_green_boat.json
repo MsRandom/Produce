@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "produce:leafy_green_planks"
+    }
+  },
+  "result": {
+    "item": "produce:leafy_green_boat"
+  }
+}

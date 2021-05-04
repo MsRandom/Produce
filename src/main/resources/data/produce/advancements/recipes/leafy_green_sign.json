@@ -1,0 +1,32 @@
+{
+  "parent": "produce:recipes/root",
+  "rewards": {
+    "recipes": [
+      "produce:leafy_green_sign"
+    ]
+  },
+  "criteria": {
+    "has_leafy_green_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "produce:leafy_green_planks"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "produce:leafy_green_sign"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_leafy_green_planks",
+      "has_the_recipe"
+    ]
+  ]
+}

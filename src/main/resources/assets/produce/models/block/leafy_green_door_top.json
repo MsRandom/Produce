@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "produce:block/leafy_green_door_top",
+    "bottom": "produce:block/leafy_green_door_bottom"
+  }
+}
