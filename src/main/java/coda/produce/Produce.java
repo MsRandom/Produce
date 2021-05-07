@@ -6,6 +6,7 @@ import coda.produce.init.*;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -20,7 +21,7 @@ public class Produce {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         bus.addListener(this::registerClient);
-        bus.addListener(this::registerCommon);
+        bus.addListener(this::registerEntityAttributes);
 
         ProduceBlocks.REGISTER.register(bus);
         ProduceItems.REGISTER.register(bus);
@@ -29,12 +30,8 @@ public class Produce {
         ProduceFoliagePlacers.REGISTER.register(bus);
     }
 
-    private void registerCommon(FMLCommonSetupEvent event) {
-        registerEntityAttributes();
-    }
-
-    private void registerEntityAttributes() {
-        GlobalEntityTypeAttributes.put(ProduceEntities.CAULIFLOWER_SHEEP.get(), CauliflowerSheepEntity.createAttributes().create());
+    private void registerEntityAttributes(EntityAttributeCreationEvent event) {
+        event.put(ProduceEntities.CAULIFLOWER_SHEEP.get(), CauliflowerSheepEntity.createAttributes().create());
     }
 
     private void registerClient(FMLClientSetupEvent event) {

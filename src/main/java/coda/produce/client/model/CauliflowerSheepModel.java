@@ -102,7 +102,7 @@ public class CauliflowerSheepModel<T extends Entity> extends AgeableModel<Caulif
 
     @Override
     protected Iterable<ModelRenderer> getHeadParts() {
-        return Collections.EMPTY_LIST;
+        return Collections.emptyList();
     }
 
     @Override

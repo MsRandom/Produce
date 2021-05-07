@@ -39,7 +39,5 @@ public class ProduceBlocks {
 
     public static final RegistryObject<Block> CAULIFLOWER_FLUFF = REGISTER.register("cauliflower_fluff", () -> new Block(AbstractBlock.Properties.create(Material.WOOL).sound(SoundType.CLOTH).hardnessAndResistance(1.0f)));
 
-    public static final FlowingFluidBlock SMOOTHIE_BLOCK = new FlowingFluidBlock(ProduceFluids.SMOOTHIE, AbstractBlock.Properties.create(Material.EARTH, MaterialColor.PINK).sound(SoundType.GROUND).doesNotBlockMovement().hardnessAndResistance(100.0F).noDrops());
-    public static final RegistryObject<FlowingFluidBlock> SMOOTHIE = REGISTER.register("smoothie", () -> SMOOTHIE_BLOCK);
-
+    public static final RegistryObject<FlowingFluidBlock> SMOOTHIE = REGISTER.register("smoothie", () ->  new FlowingFluidBlock(ProduceFluids.SMOOTHIE, AbstractBlock.Properties.create(Material.EARTH, MaterialColor.PINK).sound(SoundType.GROUND).doesNotBlockMovement().hardnessAndResistance(100.0F).noDrops()));
 }
