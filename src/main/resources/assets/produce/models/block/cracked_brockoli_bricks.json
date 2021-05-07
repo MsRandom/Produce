@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "produce:block/cracked_brockoli_bricks"
+    }
+}

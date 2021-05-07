@@ -4,11 +4,11 @@
       "Name": "produce:brockoli"
     },
     "under_material": {
-      "Name": "produce:steamed_brockoli"
+      "Name": "produce:brockoli"
     },
     "underwater_material": {
       "Name": "produce:brockoli"
     }
   },
-  "type": "minecraft:mountain"
+  "type": "minecraft:default"
 }

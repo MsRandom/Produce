@@ -5,7 +5,7 @@ license="CC2.0"
 modId="produce"
 version="${file.jarVersion}"
 displayName="Produce"
-authors="Coda1552 and Ashley aka Ms. Random"
+authors="Coda1552, VakyPanda, Ashh"
 description='''
 '''
 [[dependencies.produce]]

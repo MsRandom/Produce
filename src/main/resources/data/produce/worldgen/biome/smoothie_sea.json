@@ -1,60 +1,64 @@
 {
-  "surface_builder": "produce:smoothie_sea",
-  "depth": -1.4,
-  "scale": 0.1,
-  "temperature": 0.4,
+  "surface_builder": "minecraft:full_sand",
+  "depth": -0.855,
+  "scale": -0.05,
+  "temperature": 0.65,
   "downfall": 0.4,
   "precipitation": "rain",
   "category": "ocean",
+  "player_spawn_friendly": true,
   "effects": {
-    "sky_color": 14135799,
-    "fog_color": 16636927,
-    "water_color": 3786971,
-    "water_fog_color": 4333360,
+    "sky_color": 14873484,
+    "fog_color": 15466444,
+    "water_color": 4187353,
+    "water_fog_color": 3343621,
+    "grass_color": 4690993,
+    "foliage_color": 4690993,
     "mood_sound": {
       "sound": "minecraft:ambient_cave",
       "tick_delay": 6000,
       "block_search_extent": 8,
       "offset": 2
-    },
-    "grass_color": 1277022,
-    "foliage_color": 814655,
-    "grass_color_modifier": "dark_forest"
-  },
-  "starts": [],
-  "spawners": {
-    "water_creature": [
-      {
-        "type": "produce:dragon_fruit_serpent",
-        "weight": 1,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "produce:squidnana",
-        "weight": 2,
-        "minCount": 1,
-        "maxCount": 1
-      },
-      {
-        "type": "produce:strawberry_fish",
-        "weight": 5,
-        "minCount": 4,
-        "maxCount": 6
-      }
-    ]
-  },
-  "spawn_costs": {
-    "produce:dragon_fruit_serpent": {
-      "energy_budget": 0.5,
-      "charge": 1
     }
   },
-  "carvers": {
-    "liquid": [
-      "minecraft:underwater_cave"
-    ]
-  },
-  "features": [],
-  "player_spawn_friendly": false
+  "starts": [],
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:ore_dirt",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite",
+      "minecraft:ore_diorite",
+      "minecraft:ore_andesite",
+      "minecraft:ore_coal",
+      "minecraft:ore_iron",
+      "minecraft:ore_gold",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond",
+      "minecraft:ore_lapis",
+      "minecraft:disk_sand",
+      "minecraft:disk_clay",
+      "minecraft:disk_gravel"
+    ],
+    [],
+    [
+      "minecraft:patch_tall_grass_2",
+      "minecraft:patch_grass_plain",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin",
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    []
+  ]
 }

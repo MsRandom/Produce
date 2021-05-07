@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "produce:block/stripped_leafy_green_stem_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "produce:block/stripped_leafy_green_stem"
+    },
+    "axis=z": {
+      "model": "produce:block/stripped_leafy_green_stem_horizontal",
+      "x": 90
+    }
+  }
+}

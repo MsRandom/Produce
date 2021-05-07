@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "produce:brockoli"
+    }
+  },
+  "result": {
+    "item": "produce:chiseled_brockoli_bricks",
+    "count": 4
+  }
+}

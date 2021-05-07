@@ -14,7 +14,7 @@ import net.minecraft.world.gen.feature.NoFeatureConfig;
 import java.util.Random;
 
 public class LeafyGreenTreeFeature extends Feature<NoFeatureConfig> {
-    private final BlockState trunk = ProduceBlocks.LEAFY_GREEN_LOG.get().getDefaultState().with(RotatedPillarBlock.AXIS, Direction.Axis.Y);
+    private final BlockState trunk = ProduceBlocks.LEAFY_GREEN_STALK.get().getDefaultState().with(RotatedPillarBlock.AXIS, Direction.Axis.Y);
     private final BlockState leaves = ProduceBlocks.LEAFY_GREEN_LEAVES.get().getDefaultState().with(LeavesBlock.DISTANCE, 7).with(LeavesBlock.PERSISTENT, false);
 
     public LeafyGreenTreeFeature() {

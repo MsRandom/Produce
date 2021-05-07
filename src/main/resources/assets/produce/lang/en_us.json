@@ -3,14 +3,18 @@
 
   "item.produce.smoothie_bucket": "Bucket of Smoothie",
 
-  "block.produce.leafy_green_log": "Leafy Green Log",
-  "block.produce.leafy_green_leaves": "Leafy Green Leaves",
-  "block.produce.leafy_green_wood": "Leafy Green Wood",
-  "block.produce.leafy_green_planks": "Leafy Green Planks",
+  "item.produce.cauliflower_sheep_spawn_egg": "Cauliflower Sheep Spawn Egg",
 
+  "entity.produce.cauliflower_sheep": "Cauliflower Sheep",
+
+  "block.produce.leafy_green_stem": "Leafy Green Stem",
+  "block.produce.leafy_green_leaves": "Leafy Green Leaves",
+  "block.produce.leafy_green_stalk": "Leafy Green Stalk",
+  "block.produce.leafy_green_planks": "Leafy Green Planks",
   "block.produce.leafy_green_door": "Leafy Green Door",
-  "block.produce.stripped_leafy_green_log": "Stripped Leafy Green Log",
-  "block.produce.stripped_leafy_green_wood": "Stripped Leafy Green Wood",
+  "block.produce.leafy_green_trapdoor": "Leafy Green Trapdoor",
+  "block.produce.stripped_leafy_green_stem": "Stripped Leafy Green Stem",
+  "block.produce.stripped_leafy_green_stalk": "Stripped Leafy Green Stalk",
   "block.produce.leafy_green_slab": "Leafy Green Slab",
   "block.produce.leafy_green_stairs": "Leafy Green Stairs",
   "block.produce.leafy_green_pressure_plate": "Leafy Green Pressure Plate",
@@ -21,5 +25,14 @@
   "block.produce.leafy_green_sapling": "Leafy Green Sapling",
   "block.produce.potted_leafy_green_sapling": "Potted Leafy Green Sapling",
 
-  "block.produce.brockoli": "Brockoli"
+  "block.produce.brockoli": "Brockoli",
+  "block.produce.brockoli_bricks": "Brockoli Bricks",
+  "block.produce.cracked_brockoli_bricks": "Cracked Brockoli Bricks",
+  "block.produce.brockoli_slab": "Brockoli Slab",
+  "block.produce.brockoli_brick_slab": "Brockoli Brick Slab",
+  "block.produce.brockoli_stairs": "Brockoli Stairs",
+  "block.produce.brockoli_brick_stairs": "Brockoli Brick Stairs",
+  "block.produce.brockoli_wall": "Brockoli Wall",
+
+  "block.produce.cauliflower_fluff": "Cauliflower Fluff"
 }

@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "produce:block/brockoli_bricks",
+        "top": "produce:block/brockoli_bricks",
+        "side": "produce:block/brockoli_bricks"
+    }
+}

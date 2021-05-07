@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "produce:leafy_green_stem",
+        "produce:leafy_green_stalk",
+        "produce:stripped_leafy_green_stem",
+        "produce:stripped_leafy_green_stalk"
+    ]
+}

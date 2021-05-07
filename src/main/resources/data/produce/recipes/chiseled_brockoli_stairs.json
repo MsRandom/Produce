@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "produce:brockoli_bricks"
+    }
+  },
+  "result": {
+    "item": "produce:brockoli_bricks_stairs",
+    "count": 4
+  }
+}

@@ -9,5 +9,5 @@ import coda.produce.Produce;
 
 public class ProduceFoliagePlacers {
     public static final DeferredRegister<FoliagePlacerType<?>> REGISTER = DeferredRegister.create(ForgeRegistries.FOLIAGE_PLACER_TYPES, Produce.MOD_ID);
-    public static final RegistryObject<FoliagePlacerType<ChardwoodFoliagePlacer>> CHARDWOOD_FOLIAGE_PLACER = REGISTER.register("chardwood_foliage_placer", () -> new FoliagePlacerType<>(ChardwoodFoliagePlacer.CODEC));
+     public static final RegistryObject<FoliagePlacerType<ChardwoodFoliagePlacer>> CHARDWOOD_FOLIAGE_PLACER = REGISTER.register("chardwood_foliage_placer", () -> new FoliagePlacerType<>(ChardwoodFoliagePlacer.CODEC));
 }
