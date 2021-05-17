@@ -10,5 +10,5 @@
       "Name": "produce:brockoli"
     }
   },
-  "type": "minecraft:default"
+  "type": "produce:brockoli_volcanoes"
 }

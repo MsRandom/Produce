@@ -24,6 +24,8 @@ public class Produce {
         bus.addListener(this::registerEntityAttributes);
 
         ProduceBlocks.REGISTER.register(bus);
+        ProduceSurfaceBuilders.REGISTER.register(bus);
+        ProduceCarvers.REGISTER.register(bus);
         ProduceItems.REGISTER.register(bus);
         ProduceEntities.REGISTER.register(bus);
         ProduceFluids.REGISTER.register(bus);

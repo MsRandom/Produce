@@ -38,4 +38,5 @@ public class ProduceItems {
     public static final RegistryObject<Item> BROCKOLI_WALL = REGISTER.register("brockoli_wall", () -> new BlockItem(ProduceBlocks.BROCKOLI_WALL.get(), new Item.Properties().group(Produce.GROUP)));
     public static final RegistryObject<Item> BROCKOLI_BRICK_SLAB = REGISTER.register("brockoli_brick_slab", () -> new BlockItem(ProduceBlocks.BROCKOLI_BRICK_SLAB.get(), new Item.Properties().group(Produce.GROUP)));
     public static final RegistryObject<Item> BROCKOLI_BRICK_STAIRS = REGISTER.register("brockoli_brick_stairs", () -> new BlockItem(ProduceBlocks.BROCKOLI_BRICK_STAIRS.get(), new Item.Properties().group(Produce.GROUP)));
+    public static final RegistryObject<Item> CHARRED_BROCKOLI = REGISTER.register("charred_brockoli", () -> new BlockItem(ProduceBlocks.CHARRED_BROCKOLI.get(), new Item.Properties().group(Produce.GROUP)));
 }

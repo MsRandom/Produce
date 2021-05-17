@@ -4,7 +4,7 @@
   "sea_level": 63,
   "disable_mob_generation": false,
   "default_block": {
-    "Name": "minecraft:stone"
+    "Name": "produce:brockoli"
   },
   "default_fluid": {
     "Name": "produce:smoothie",

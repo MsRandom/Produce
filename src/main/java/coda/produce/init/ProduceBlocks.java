@@ -28,16 +28,19 @@ public class ProduceBlocks {
     public static final RegistryObject<Block> LEAFY_GREEN_FENCE = REGISTER.register("leafy_green_fence", () -> new FenceBlock(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.GREEN).hardnessAndResistance(1.5F).sound(SoundType.WOOD).notSolid()));
     public static final RegistryObject<Block> LEAFY_GREEN_FENCE_GATE = REGISTER.register("leafy_green_fence_gate", () -> new FenceGateBlock(AbstractBlock.Properties.create(Material.WOOD, MaterialColor.GREEN).hardnessAndResistance(1.5F).sound(SoundType.WOOD).notSolid()));
 
-    public static final RegistryObject<Block> BROCKOLI = REGISTER.register("brockoli", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
-    public static final RegistryObject<Block> BROCKOLI_SLAB = REGISTER.register("brockoli_slab", () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
-    public static final RegistryObject<Block> BROCKOLI_STAIRS = REGISTER.register("brockoli_stairs", () -> new StairsBlock(() -> BROCKOLI.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
-    public static final RegistryObject<Block> BROCKOLI_WALL = REGISTER.register("brockoli_wall", () -> new WallBlock(AbstractBlock.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
-    public static final RegistryObject<Block> BROCKOLI_BRICKS = REGISTER.register("brockoli_bricks", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
-    public static final RegistryObject<Block> BROCKOLI_BRICK_SLAB = REGISTER.register("brockoli_brick_slab", () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
-    public static final RegistryObject<Block> BROCKOLI_BRICK_STAIRS = REGISTER.register("brockoli_brick_stairs", () -> new StairsBlock(() -> BROCKOLI_BRICKS.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
-    public static final RegistryObject<Block> CRACKED_BROCKOLI_BRICKS = REGISTER.register("cracked_brockoli_bricks", () -> new Block(AbstractBlock.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
+    public static final Block BROCKOLI_BLOCK = new Block(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.GREEN).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f));
+    public static final Block CHARRED_BROCKOLI_BLOCK = new Block(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.BROWN_TERRACOTTA).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f));
+    public static final RegistryObject<Block> BROCKOLI = REGISTER.register("brockoli", () -> BROCKOLI_BLOCK);
+    public static final RegistryObject<Block> BROCKOLI_SLAB = REGISTER.register("brockoli_slab", () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.GREEN).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
+    public static final RegistryObject<Block> BROCKOLI_STAIRS = REGISTER.register("brockoli_stairs", () -> new StairsBlock(() -> BROCKOLI.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK, MaterialColor.GREEN).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
+    public static final RegistryObject<Block> BROCKOLI_WALL = REGISTER.register("brockoli_wall", () -> new WallBlock(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.GREEN).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
+    public static final RegistryObject<Block> BROCKOLI_BRICKS = REGISTER.register("brockoli_bricks", () -> new Block(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.GREEN).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
+    public static final RegistryObject<Block> BROCKOLI_BRICK_SLAB = REGISTER.register("brockoli_brick_slab", () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.GREEN).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
+    public static final RegistryObject<Block> BROCKOLI_BRICK_STAIRS = REGISTER.register("brockoli_brick_stairs", () -> new StairsBlock(() -> BROCKOLI_BRICKS.get().getDefaultState(), AbstractBlock.Properties.create(Material.ROCK, MaterialColor.GREEN).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
+    public static final RegistryObject<Block> CRACKED_BROCKOLI_BRICKS = REGISTER.register("cracked_brockoli_bricks", () -> new Block(AbstractBlock.Properties.create(Material.ROCK, MaterialColor.GREEN).sound(SoundType.STONE).hardnessAndResistance(1.5f, 6.0f)));
+    public static final RegistryObject<Block> CHARRED_BROCKOLI = REGISTER.register("charred_brockoli", () -> CHARRED_BROCKOLI_BLOCK);
 
-    public static final RegistryObject<Block> CAULIFLOWER_FLUFF = REGISTER.register("cauliflower_fluff", () -> new Block(AbstractBlock.Properties.create(Material.WOOL).sound(SoundType.CLOTH).hardnessAndResistance(1.0f)));
+    public static final RegistryObject<Block> CAULIFLOWER_FLUFF = REGISTER.register("cauliflower_fluff", () -> new Block(AbstractBlock.Properties.create(Material.WOOL, MaterialColor.QUARTZ).sound(SoundType.CLOTH).hardnessAndResistance(1.0f)));
 
     public static final RegistryObject<FlowingFluidBlock> SMOOTHIE = REGISTER.register("smoothie", () ->  new FlowingFluidBlock(ProduceFluids.SMOOTHIE, AbstractBlock.Properties.create(Material.EARTH, MaterialColor.PINK).sound(SoundType.GROUND).doesNotBlockMovement().hardnessAndResistance(100.0F).noDrops()));
 }

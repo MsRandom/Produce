@@ -18,6 +18,7 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(value = {Dist.CLIENT}, bus = Mod.EventBusSubscriber.Bus.MOD, modid = Produce.MOD_ID)
 public class ClientEvents {
+
     public static void init() {
         RenderingRegistry.registerEntityRenderingHandler(ProduceEntities.CAULIFLOWER_SHEEP.get(), CauliflowerSheepRenderer::new);
     }
