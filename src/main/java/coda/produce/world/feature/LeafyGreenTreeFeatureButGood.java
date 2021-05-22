@@ -80,7 +80,7 @@ public class LeafyGreenTreeFeatureButGood extends Feature<NoFeatureConfig>
         Direction bendDirection = directions[rand.nextInt(directions.length)];
         int bendOffset = 0;
         float currentBendChance = baseBendChance;
-        for (int i = 0; i <= height-1; i++) //trunk placement
+        for (int i = 0; i < height; i++) //trunk placement
         {
             BlockPos trunkPos = pos.up(i).offset(bendDirection, bendOffset);
             if (canPlace(reader, trunkPos))
@@ -112,7 +112,7 @@ public class LeafyGreenTreeFeatureButGood extends Feature<NoFeatureConfig>
             int downwardsOffset = minimumDownwardsBranchOffset + rand.nextInt(extraDownwardsBranchOffset +1);
             int branchHeight = minimumBranchHeight + rand.nextInt(extraBranchHeight + 1);
             BlockPos branchPos = trunkPos.offset(direction, 1).down(downwardsOffset).up(branchUpwardsOffset);
-            for (int i = -1; i < branchHeight; i++) //actual branch
+            for (int i = -1; i <= branchHeight; i++) //actual branch
             {
                 BlockPos branchPosAgain = branchPos.up(i).offset(direction, branchBend);
                 trunkFiller.entries.add(new BlockStateEntry(logBlock(), branchPosAgain));
@@ -124,7 +124,7 @@ public class LeafyGreenTreeFeatureButGood extends Feature<NoFeatureConfig>
             }
 
             int topLeavesHeight = branchTopLeavesHeight + rand.nextInt(extraBranchTopLeavesHeight + 1);
-            for (int i = branchHeight; i < topLeavesHeight; i++) //leaves directly above branch
+            for (int i = branchHeight; i <= topLeavesHeight; i++) //leaves directly above branch
             {
                 BlockPos topLeavesPos = branchPos.up(i).offset(direction);
                 leavesFiller.entries.add(new BlockStateEntry(leavesBlock(), topLeavesPos));
@@ -135,7 +135,7 @@ public class LeafyGreenTreeFeatureButGood extends Feature<NoFeatureConfig>
             {
                 int leavesStart = minimumLeavesStart + rand.nextInt(extraLeavesStart + 1);
                 int leavesHeight = minimumLeavesHeight + rand.nextInt(extraLeavesHeight + 1);
-                for (int i = leavesStart; i < leavesHeight; i++)
+                for (int i = leavesStart; i <= leavesHeight; i++)
                 {
                     BlockPos leavesPos = branchPos.offset(leavesDirection).up(i).offset(direction);
                     leavesFiller.entries.add(new BlockStateEntry(leavesBlock(), leavesPos));
