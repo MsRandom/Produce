@@ -2,6 +2,7 @@ package coda.produce.init;
 
 import coda.produce.Produce;
 import coda.produce.item.ProduceSpawnEggItem;
+import coda.produce.item.TestItem;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,6 +12,7 @@ public class ProduceItems {
     public static final DeferredRegister<Item> REGISTER = DeferredRegister.create(ForgeRegistries.ITEMS, Produce.MOD_ID);
 
     public static final RegistryObject<Item> SMOOTHIE_BUCKET = REGISTER.register("smoothie_bucket", () -> new BucketItem(ProduceFluids.SMOOTHIE, (new Item.Properties()).containerItem(Items.BUCKET).maxStackSize(1).group(Produce.GROUP)));
+    public static final RegistryObject<Item> TEST_ITEM = REGISTER.register("test_item", () -> new TestItem((new Item.Properties()).maxStackSize(1).group(Produce.GROUP)));
 
     public static final RegistryObject<Item> CAULIFLOWER_SHEEP_SPAWN_EGG = REGISTER.register("cauliflower_sheep_spawn_egg", () -> new ProduceSpawnEggItem(ProduceEntities.CAULIFLOWER_SHEEP, 0xf9f1dd, 0xa1cf70, new Item.Properties().group(Produce.GROUP)));
 

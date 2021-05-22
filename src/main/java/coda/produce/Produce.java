@@ -26,6 +26,7 @@ public class Produce {
         ProduceCarvers.REGISTER.register(bus);
         ProduceItems.REGISTER.register(bus);
         ProduceEntities.REGISTER.register(bus);
+        ProduceFeatures.REGISTER.register(bus);
         ProduceFluids.REGISTER.register(bus);
         ProduceFoliagePlacers.REGISTER.register(bus);
     }
