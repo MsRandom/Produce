@@ -9,8 +9,8 @@
   "effects": {
     "sky_color": 9695683,
     "fog_color": 13434854,
-    "water_color": 4187344,
-    "water_fog_color": 340019,
+    "water_color": 4696372,
+    "water_fog_color": 3835435,
     "grass_color": 4690993,
     "foliage_color": 4690993,
     "mood_sound": {
@@ -25,8 +25,7 @@
   "spawn_costs": {},
   "carvers": {
     "air": [
-      "minecraft:canyon",
-      "minecraft:cave"
+      "produce:produce_cave_carver"
     ]
   },
   "features": [

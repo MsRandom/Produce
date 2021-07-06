@@ -4,8 +4,12 @@
   "item.produce.smoothie_bucket": "Bucket of Smoothie",
 
   "item.produce.cauliflower_sheep_spawn_egg": "Cauliflower Sheep Spawn Egg",
+  "item.produce.blueberrish_spawn_egg": "Blueberrish Spawn Egg",
+  "item.produce.strawberrish_spawn_egg": "Strawberrish Spawn Egg",
 
   "entity.produce.cauliflower_sheep": "Cauliflower Sheep",
+  "entity.produce.blueberrish": "Blueberrish",
+  "entity.produce.strawberrish": "Strawberrish",
 
   "block.produce.leafy_green_stem": "Leafy Green Stem",
   "block.produce.leafy_green_leaves": "Leafy Green Leaves",

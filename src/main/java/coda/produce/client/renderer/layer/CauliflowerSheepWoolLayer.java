@@ -16,7 +16,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 @OnlyIn(Dist.CLIENT)
 public class CauliflowerSheepWoolLayer extends LayerRenderer<CauliflowerSheepEntity, CauliflowerSheepModel<CauliflowerSheepEntity>> {
-    private static final RenderType TEXTURE = RenderType.getEntityCutoutNoCull(new ResourceLocation(Produce.MOD_ID, "textures/entity/cauliflower_sheep/normal.png"));
+    private static final RenderType TEXTURE = RenderType.entityCutoutNoCull(new ResourceLocation(Produce.MOD_ID, "textures/entity/cauliflower_sheep/normal.png"));
 
     public CauliflowerSheepWoolLayer(IEntityRenderer<CauliflowerSheepEntity, CauliflowerSheepModel<CauliflowerSheepEntity>> rendererIn) {
         super(rendererIn);
@@ -26,7 +26,7 @@ public class CauliflowerSheepWoolLayer extends LayerRenderer<CauliflowerSheepEnt
     public void render(MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int packedLightIn, CauliflowerSheepEntity entitylivingbaseIn, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
         IVertexBuilder ivertexbuilder = bufferIn.getBuffer(this.getRenderType());
         if (!entitylivingbaseIn.isSheared()) {
-            this.getEntityModel().render(matrixStackIn, ivertexbuilder,  packedLightIn, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
+            this.getParentModel().renderToBuffer(matrixStackIn, ivertexbuilder,  packedLightIn, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
         }
     }
 

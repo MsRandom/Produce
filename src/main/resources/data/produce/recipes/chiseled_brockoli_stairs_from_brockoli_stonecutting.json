@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "produce:brockoli"
-  },
-  "result": "produce:brockoli_bricks_stairs",
-  "count": 1
-}

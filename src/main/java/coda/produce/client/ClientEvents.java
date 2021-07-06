@@ -1,13 +1,18 @@
 package coda.produce.client;
 
 import coda.produce.Produce;
+import coda.produce.client.renderer.BlueberrishRenderer;
 import coda.produce.client.renderer.CauliflowerSheepRenderer;
+import coda.produce.client.renderer.StrawberrishRenderer;
 import coda.produce.init.ProduceBlocks;
 import coda.produce.init.ProduceEntities;
 import coda.produce.item.ProduceSpawnEggItem;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.color.BlockColors;
 import net.minecraft.client.renderer.color.IItemColor;
 import net.minecraft.client.renderer.color.ItemColors;
+import net.minecraft.world.GrassColors;
 import net.minecraft.world.biome.BiomeColors;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -21,6 +26,10 @@ public class ClientEvents {
 
     public static void init() {
         RenderingRegistry.registerEntityRenderingHandler(ProduceEntities.CAULIFLOWER_SHEEP.get(), CauliflowerSheepRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ProduceEntities.BLUEBERRISH.get(), BlueberrishRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ProduceEntities.STRAWBERRISH.get(), StrawberrishRenderer::new);
+
+        RenderTypeLookup.setRenderLayer(ProduceBlocks.LEAFY_GREEN_SAPLING.get(), RenderType.cutout());
     }
 
     @SubscribeEvent
@@ -28,10 +37,5 @@ public class ClientEvents {
         ItemColors handler = event.getItemColors();
         IItemColor eggColor = (stack, tintIndex) -> ((ProduceSpawnEggItem) stack.getItem()).getColor(tintIndex);
         for (ProduceSpawnEggItem e : ProduceSpawnEggItem.UNADDED_EGGS) handler.register(eggColor, e);
-    }
-
-    @SubscribeEvent
-    public static void blockColors(ColorHandlerEvent.Block event) {
-        event.getBlockColors().register((state, reader, pos, tintIndex) -> reader != null && pos != null ? BiomeColors.getWaterColor(reader, pos) : -1, ProduceBlocks.SMOOTHIE.get());
     }
 }

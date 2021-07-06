@@ -19,7 +19,7 @@ public class CauliflowerSheepRenderer extends MobRenderer<CauliflowerSheepEntity
         this.addLayer(new CauliflowerSheepWoolLayer(this));
     }
 
-    public ResourceLocation getEntityTexture(CauliflowerSheepEntity entity) {
+    public ResourceLocation getTextureLocation(CauliflowerSheepEntity entity) {
         return TEXTURE;
     }
 }
